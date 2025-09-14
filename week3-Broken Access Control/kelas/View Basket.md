@@ -6,13 +6,13 @@
 
 ---
 
-## 📝 Ringkasan
+##  Ringkasan
 
 Tantangan "View Basket" mengeksploitasi kerentanan **Insecure Direct Object Reference (IDOR)** pada sebuah *endpoint* API. Aplikasi ini memungkinkan pengguna untuk melihat isi keranjang belanja pengguna lain dengan cara memanipulasi ID keranjang yang dikirimkan dalam sebuah *request*. Tantangan ini menunjukkan kegagalan aplikasi dalam melakukan validasi otorisasi di sisi server.
 
 ---
 
-## 🔬 Analisis Kerentanan
+##  Analisis Kerentanan
 
 Kerentanan utama adalah **Broken Access Control**. Saat pengguna melihat keranjang belanjanya, aplikasi membuat sebuah *request* ke API *backend*, misalnya `GET /rest/basket/5`, di mana `5` adalah ID unik untuk keranjang belanja pengguna tersebut.
 
@@ -20,13 +20,13 @@ Masalahnya adalah, *backend* aplikasi **hanya memeriksa apakah pengguna sudah lo
 
 ---
 
-## 🛠️ Tools yang Digunakan
+##  Tools yang Digunakan
 
 * **OWASP ZAP** atau **Burp Suite** (untuk memodifikasi *request*)
 
 ---
 
-## 🚀 Langkah-langkah Penyelesaian (Walkthrough)
+##  Langkah-langkah Penyelesaian (Walkthrough)
 
 1.  **Memicu Request:** Pertama, saya login ke aplikasi dan menambahkan satu barang ke keranjang belanja. Kemudian, saya mengklik ikon keranjang untuk melihat isinya. Aksi ini bertujuan untuk menghasilkan *request* yang sah ke API keranjang belanja.
 
@@ -47,7 +47,7 @@ Masalahnya adalah, *backend* aplikasi **hanya memeriksa apakah pengguna sudah lo
 
 ---
 
-## 🛡️ Rekomendasi Mitigasi
+##  Rekomendasi Mitigasi
 
 1.  **Terapkan Pemeriksaan Otorisasi di Sisi Server:** Ini adalah perbaikan yang paling penting. Setiap kali server menerima permintaan untuk mengakses sebuah sumber daya (seperti keranjang belanja), server **wajib** memverifikasi bahwa ID pengguna yang tersimpan di sesi (*session cookie* atau token) cocok dengan pemilik dari sumber daya yang diminta. Jika tidak cocok, permintaan harus ditolak (misalnya dengan status `403 Forbidden`).
 
@@ -55,7 +55,7 @@ Masalahnya adalah, *backend* aplikasi **hanya memeriksa apakah pengguna sudah lo
 
 ---
 
-## ✅ Kesimpulan
+##  Kesimpulan
 
 Tantangan ini adalah demonstrasi klasik dari kerentanan IDOR. Ini mengajarkan pelajaran penting bahwa *endpoint* API yang mengakses data spesifik pengguna tidak boleh hanya bergantung pada autentikasi (memastikan pengguna sudah login), tetapi juga harus menerapkan otorisasi (memastikan pengguna yang login hanya bisa mengakses datanya sendiri).
 
