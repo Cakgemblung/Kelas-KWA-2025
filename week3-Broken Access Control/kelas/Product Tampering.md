@@ -53,5 +53,10 @@ Untuk menambal kerentanan semacam ini, pengembang harus menerapkan kontrol akses
 3.  **Prinsip Hak Istimewa Terendah (Principle of Least Privilege):** Pastikan pengguna hanya memiliki akses ke data dan fungsionalitas yang benar-benar mereka butuhkan.
 
 ## Bukti
-<img width="1920" height="1080" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/3bba10c7-14d6-4797-b730-e2b9d1df5e57" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/05794174-6445-4591-8d3e-abf0f8f1bd1f" />
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e95c5917-c55f-41c4-94bd-99752c705120" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/99b45591-8951-421a-8667-0d8c4c262acf" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c1192819-304e-4839-b2da-bf56c686e609" />
