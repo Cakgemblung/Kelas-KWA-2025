@@ -59,6 +59,8 @@ Pelajaran utama dari tantangan ini adalah:
 
 ## Bukti Penyelesaian
 
-
-
+<img width="1920" height="1080" alt="Screenshot (72)" src="https://github.com/user-attachments/assets/c69acc59-6ef9-4bd4-98ef-047120ad489b" />
+<img width="1920" height="1080" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/fb4381a6-3ed6-4803-9c50-8d6a4b68df94" />
+<img width="1920" height="1080" alt="Screenshot (74)" src="https://github.com/user-attachments/assets/eb1f4f9e-898a-493e-b813-ac71c5c076c1" />
+<img width="1920" height="1080" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/5582052e-2e73-4248-9035-347d6b0cca88" />
 
